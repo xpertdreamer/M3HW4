@@ -6,8 +6,8 @@ public class CustomTreeSet<E> {
     private CustomTreeMap<E, Object> map;
     private final Object PRESENT = new Object();
 
-    public CustomTreeSet(CustomTreeMap<E, Object> map) {
-        this.map = map;
+    public CustomTreeSet() {
+        map = new CustomTreeMap<>();
     }
 
     public boolean add(E e) {
